@@ -1,0 +1,13 @@
+# Virtual Environment
+venv/
+
+# Database files
+*.db
+surveillance.db
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Reference images (optional: agar aap apni photos public nahi karna chahte)
+reference_images/

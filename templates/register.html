@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Register</title>
+</head>
+<body>
+    <form id="regForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="file" name="photo" accept="image/*" required>
+        <button type="submit">Register</button>
+    </form>
+    <div id="status"></div>
+    <script>
+        document.getElementById('regForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const res = await fetch('/register_face', { method: 'POST', body: formData });
+            const data = await res.json();
+            document.getElementById('status').innerText = data.message;
+        };
+    </script>
+</body>
+</html>

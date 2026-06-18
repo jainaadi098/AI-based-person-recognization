@@ -1,4 +1,4 @@
-# 👁️ AI-Based Missing Person Detection System (Surveillance Core v5.0)
+# 👁️ AI-Based Missing Person Detection System 
 
 ![System Status](https://img.shields.io/badge/System-Active-00ffcc.svg)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
